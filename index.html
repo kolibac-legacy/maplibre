@@ -19,12 +19,18 @@
     const map = new maplibregl.Map({
         container: 'map',
         style: 'https://demotiles.maplibre.org/style.json',
-        center: [12.550343, 55.665957],
+        center: [-80.0369444, 26.6769444],
         zoom: 6
     });
 
-    const marker = new maplibregl.Marker()
-        .setLngLat([12.550343, 55.665957])
+    const marker1 = new maplibregl.Marker()
+          .setLngLat([12.550343, 55.665957])
+          .addTo(map);
+    const marker2 = new maplibregl.Marker()
+          .setLngLat([-64.825, 18.3])
+          .addTo(map);
+    const marker3 = new maplibregl.Marker()
+        .setLngLat([-80.0369444, 26.6769444])
         .addTo(map);
 </script>
 </body>
